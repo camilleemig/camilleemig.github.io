@@ -1,68 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Camille Emig</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="animations.js"></script>
-  </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Camille Emig</h3>
-          <!-- <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="experience.html">Experience</a>
-            <a class="nav-link" href="#">Contact</a>
-          </nav> -->
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading" id="coverHeading">Under construction right now... Check back later!</h1>
-        <!-- <p class="lead">Hey! My name is Camille, and I'm a Computer Science student studying at Michigan State University's Honors College.</p> -->
-        <!-- <p class="lead">
-          <a href="experience.html" class="btn btn-lg btn-secondary">Learn more</a>
-
-        </p> -->
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p><<a href="mailto::camille.emig@gmail.com">camille.emig@gmail.com</a>></p>
-        </div>
-      </footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ddupe — A lighter photo library</title>
+  <meta name="description" content="ddupe finds every burst, retake, and almost-identical shot in your photo library and helps you keep only the one you love. Private, on-device, and nothing is deleted without your say-so.">
+  <meta name="theme-color" content="#f7f4f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#181515" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="ddupe — A lighter photo library">
+  <meta property="og:description" content="Find near-duplicate photos and keep only the one you love. Everything runs on your iPhone.">
+  <meta property="og:image" content="https://camilleemig.github.io/assets/icon.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="./" aria-label="ddupe home">
+        <img class="wordmark wordmark-light" src="assets/wordmark.png" alt="ddupe">
+        <img class="wordmark wordmark-dark" src="assets/wordmark-dark.png" alt="ddupe">
+      </a>
+      <nav class="site-nav">
+        <a class="hide-sm" href="#how">How it works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#support">Support</a>
+      </nav>
     </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <div class="stripes" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h1>A lighter photo library.</h1>
+          <p class="lede">Every burst, every retake, every almost-identical shot — ddupe finds them and helps you keep only the one you love.</p>
+          <a class="store-button" href="https://apps.apple.com/app/id0000000000">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.63c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.63 1.11 8.8.73 1.06 1.61 2.25 2.75 2.21 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.66-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.32-3.56ZM14.18 6.16c.61-.74 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.69-.93 2.69.98.08 1.98-.5 2.59-1.23Z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <p class="requirements">Available for iPhone</p>
+        </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <!-- Google Analytics
-    ================================================== -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        <div class="phone" role="img" aria-label="ddupe showing a group of four similar cherry blossom photos, with one marked to keep and three marked to delete">
+          <div class="screen">
+            <p class="screen-title">4 similar</p>
+            <p class="screen-sub">April 12 · Tap to choose your favorite</p>
+            <div class="shot keep">
+              <img src="assets/similar-2.jpg" alt="">
+              <span class="pip keep"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.2 5 8.6l4.5-5"/></svg></span>
+            </div>
+            <div class="thumbs">
+              <div class="shot dim">
+                <img src="assets/similar-1.jpg" alt="">
+                <span class="pip delete"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m3 3 6 6M9 3 3 9"/></svg></span>
+              </div>
+              <div class="shot dim">
+                <img src="assets/similar-2.jpg" alt="" style="object-position: 30% 50%">
+                <span class="pip delete"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m3 3 6 6M9 3 3 9"/></svg></span>
+              </div>
+              <div class="shot dim">
+                <img src="assets/similar-1.jpg" alt="" style="object-position: 70% 50%">
+                <span class="pip delete"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m3 3 6 6M9 3 3 9"/></svg></span>
+              </div>
+            </div>
+            <div class="screen-bar">
+              <span class="ghost">KEEP ALL</span>
+              <span class="solid">DELETE 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      ga('create', 'UA-104066606-1', 'auto');
-      ga('send', 'pageview');
+    <section class="band" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Grouped by similarity.</h2>
+          <p>ddupe looks at what's actually in each photo, gathers the near-identical ones into a group, and lets you decide what stays.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <h3>Scan your library</h3>
+            <p>ddupe works through your photos on your iPhone and surfaces groups as it finds them — no waiting for the whole scan to finish. Put it down anytime; it picks up where it left off.</p>
+          </li>
+          <li>
+            <h3>Pick the keeper</h3>
+            <p>Flip through each group side by side. ddupe suggests which ones to let go, and you have the final word on every photo.</p>
+          </li>
+          <li>
+            <h3>Delete the rest</h3>
+            <p>Confirm and the extras are gone. iOS asks before anything is removed, and deleted photos wait in Recently Deleted in case you change your mind.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    </script>
-  </body>
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Features</p>
+          <h2>Built for big libraries.</h2>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <span class="feature-icon tint-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><path d="m14 17 2 2 4-4"/></svg></span>
+            <div>
+              <h3>Finds near-duplicates, not just exact copies</h3>
+              <p>Bursts, retakes, slightly different angles, the same scene a second later — ddupe recognizes photos that look alike even when the files are different.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon tint-yellow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></span>
+            <div>
+              <h3>Adjustable sensitivity</h3>
+              <p>Strict to catch only near-identical shots, relaxed to catch more variations — or set your own cutoff anywhere from 50% to 100%.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon tint-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="9.5" stroke-dasharray="1.5 2.5"/></svg></span>
+            <div>
+              <h3>Slim down Live Photos</h3>
+              <p>Turn Live Photos you don't need into stills, choosing the exact frame to keep. Dates, locations, and other details come along.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon tint-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+            <div>
+              <h3>Your whole library, or one album</h3>
+              <p>Scan everything at once, focus on a single album, or browse your library by year, month, or week to tackle it a piece at a time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band privacy" id="privacy">
+      <div class="wrap">
+        <div class="section-head" style="margin-bottom: 0">
+          <p class="eyebrow">Privacy</p>
+          <h2>Always private.</h2>
+          <p>ddupe needs access to your photo library to look for duplicates — and that's where your photos stay. There are no accounts, no ads, and no analytics.</p>
+          <p><a href="privacy.html">Read the privacy policy</a></p>
+        </div>
+        <ul class="promises">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Everything runs on your iPhone</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.2 9.1 4.5 4.5 0 0 0 7 18Z"/><path d="m3 3 18 18"/></svg>Your photos are never uploaded</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9S9.5 5.5 12 3Z"/><path d="m4 4 16 16"/></svg>None of your actions are tracked</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>Nothing is deleted without your say-so</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Support</p>
+          <h2>Questions &amp; answers.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Will ddupe delete photos on its own?</summary>
+            <p>No. ddupe only suggests what to remove. Nothing is deleted until you confirm, iOS asks for permission before every deletion, and deleted photos go to Recently Deleted in the Photos app, where you can recover them for up to 30 days.</p>
+          </details>
+          <details>
+            <summary>Are my photos uploaded anywhere?</summary>
+            <p>Never. All analysis happens on your iPhone. ddupe doesn't connect to any server and doesn't collect any data about you or your library.</p>
+          </details>
+          <details>
+            <summary>How long does a scan take?</summary>
+            <p>It depends on the size of your library and your iPhone. Groups start appearing right away, so you can begin reviewing while the scan continues. If you leave the app, the scan resumes where it stopped next time.</p>
+          </details>
+          <details>
+            <summary>ddupe grouped photos that aren't really duplicates.</summary>
+            <p>Open Settings in ddupe and choose a stricter scan sensitivity. Stricter levels only group photos that are near-identical; relaxed levels catch more variations with more false matches. You can also hide a group so it doesn't come back.</p>
+          </details>
+          <details>
+            <summary>Does ddupe work with iCloud Photos?</summary>
+            <p>Yes. ddupe works with the library in the Photos app, including photos stored in iCloud. Photos you delete are removed from all your devices that use iCloud Photos, just like deleting in the Photos app.</p>
+          </details>
+          <details>
+            <summary>I only gave ddupe access to some photos.</summary>
+            <p>ddupe can only see the photos you've shared with it. To let it scan your whole library, go to Settings › Privacy &amp; Security › Photos › ddupe and choose Full Access.</p>
+          </details>
+          <details>
+            <summary>How do I start over?</summary>
+            <p>In ddupe's Settings, tap Clear Cache. This discards saved scan results so the next scan starts fresh. Your photos are not affected.</p>
+          </details>
+        </div>
+        <div class="contact">
+          <h3>Still need help?</h3>
+          <p>Email <a href="mailto:camille.emig@gmail.com?subject=ddupe%20support">camille.emig@gmail.com</a> and I'll get back to you as soon as I can. Bug reports and feature ideas are welcome too.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band cta">
+      <div class="wrap">
+        <img class="app-icon" src="assets/icon.png" alt="ddupe app icon">
+        <h2>Keep the one you love.</h2>
+        <p class="lede">Free up space and clear out the clutter, one group at a time.</p>
+        <a class="store-button" href="https://apps.apple.com/app/id0000000000">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.63c-.02-2.2 1.8-3.26 1.88-3.31-1.02-1.5-2.62-1.7-3.19-1.72-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.63 1.11 8.8.73 1.06 1.61 2.25 2.75 2.21 1.1-.04 1.52-.71 2.85-.71 1.33 0 1.71.71 2.88.69 1.19-.02 1.94-1.08 2.66-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.32-.89-2.32-3.56ZM14.18 6.16c.61-.74 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.69-.93 2.69.98.08 1.98-.5 2.59-1.23Z"/></svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Camille Emig</span>
+      <nav>
+        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
 </html>
