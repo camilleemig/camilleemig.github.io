@@ -417,6 +417,9 @@ section { padding: 96px 0; }
 
 .faq details p { color: var(--muted); margin: 12px 0 0; }
 
+.support-contact { margin: 40px 0 0; color: var(--muted); }
+.support-contact a { color: var(--text); font-weight: 600; }
+
 /* CTA */
 
 .cta {
