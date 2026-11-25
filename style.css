@@ -417,17 +417,6 @@ section { padding: 96px 0; }
 
 .faq details p { color: var(--muted); margin: 12px 0 0; }
 
-.contact {
-  margin-top: 48px;
-  padding: 28px;
-  border-radius: 22px;
-  background: var(--surface);
-  max-width: 760px;
-}
-
-.contact p { margin: 8px 0 0; color: var(--muted); }
-.contact a { color: var(--text); font-weight: 600; }
-
 /* CTA */
 
 .cta {
